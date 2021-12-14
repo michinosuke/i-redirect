@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirect</title>
+  <meta charset="utf-8">
+</head>
+<body>
+
+<p id="text">Redirect</p>
+
+<script>
+
+window.onload = () => {
+  let periods = 0;
+  const text = document.getElementById('text')
+  setInterval(() => {
+    periods++;
+    text.innerHTML = 'Redirect' + '.'.repeat(periods % 3 + 1)
+  }, 100)
+
+  setTimeout(() => {
+    const host = 'aidem.kcapduolc//:sptth'.split('').reverse().join('')
+    location.href=host
+  }, 5000)
+}
+
+</script>
+</body>
+</html>
