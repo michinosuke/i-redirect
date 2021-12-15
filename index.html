@@ -3,6 +3,12 @@
 <head>
   <title>Redirect</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <style>
+    p {
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
 
@@ -15,7 +21,7 @@ window.onload = () => {
   const text = document.getElementById('text')
   setInterval(() => {
     periods++;
-    text.innerHTML = 'Redirect' + '.'.repeat(periods % 3 + 1)
+    text.innerHTML = 'Redirect' + '.'.repeat(periods % 5 + 1)
   }, 100)
 
   setTimeout(() => {
