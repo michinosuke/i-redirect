@@ -3,33 +3,11 @@
 <head>
   <title>Redirect</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-  <style>
-    p {
-      font-size: 18px;
-    }
-  </style>
+  <meta http-equiv=”refresh” content="0; URL=https://cloudpack.media/">
 </head>
 <body>
-
-<p id="text">Redirect</p>
-
 <script>
-
-window.onload = () => {
-  let periods = 0;
-  const text = document.getElementById('text')
-  setInterval(() => {
-    periods++;
-    text.innerHTML = 'Redirect' + '.'.repeat(periods % 5 + 1)
-  }, 100)
-
-  setTimeout(() => {
-    const host = 'aidem.kcapduolc//:sptth'.split('').reverse().join('')
-    location.href=host
-  }, 3000)
-}
-
+location.href='https://cloudpack.media/'
 </script>
 </body>
 </html>
